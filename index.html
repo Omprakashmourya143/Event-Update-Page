@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Update Page.</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .row1{
+        border: 4px solid black;
+    }
+    .container{
+        border: 4px solid black;
+    }
+    #img{
+        width: 200px;
+        background-color: rgb(66, 80, 105);
+        border: 1px solid black;
+    }
+    .event1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1000;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row1 my-5">
+            <div class="event1 col-md-12 my-4" style="position: relative;margin-left: 40vw;"><h1>Event 1</h1></div>
+            <div class="num col-md-12 my-4" style="position: relative;margin-left: 35vw;"><h5>Number of available seats : 23</h5></div>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="divleft col-md-4 col-md-4 my-2">
+                        <div class="card mx-5 my-5" id="img">
+                            <img class="rounded-circle my-4 mx-4" alt="avatar1" src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp" style="width: 150px;height: 150px;" /></div>
+                    </div>
+                    <div class="divright col-md-8 col-md-8">
+                        <form>
+                            <div class="form-group row my-2">
+                                <label for="colFormLabe-md" class="col-md-2"><b>Name :</b></label>
+                                <div class="col-md-10">
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div> 
+                              <div class="form-group row my-2">
+                                <label for="colFormLabe-md" class="col-md-2"><b>Email :</b></label>
+                                <div class="col-md-10">
+                                  <input type="email" class="form-control">
+                                </div>
+                              </div> 
+                              <div class="form-group row my-2">
+                                <label for="colFormLabe-md" class="col-md-2"><b>Phone :</b></label>
+                                <div class="col-md-10">
+                                  <input type="tel" class="form-control" required>
+                                </div>
+                              </div>  
+                              <div class="form-group row my-4">
+                                <label for="colFormLabe-md" class="col-md-3 col-sm-4"><b>Number of seats :</b></label>
+                                <select name="select" id="control" class="select col-md-2 col-sm-2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                </div>
+                                <div class="form-group row my-4">
+                                    <label for="colFormLabe-md" class="col-md-3"><b>Name of Attendee 2:</b></label>
+                                    <div class="col-md-8">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <button type="button" class="btn btn-outline-dark col-md-3 col-sm-12 my-4" style="position: relative;margin-left: 20px;">Submit</button>
+                                  <button type="button" class="btn btn-outline-dark col-md-3 my-4" style="position: relative;margin-left: 20px;">Cancel</button>
+                        </form>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
